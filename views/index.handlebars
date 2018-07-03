@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mr Web Developer</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+
+  <link href="../public/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="../public/css/style.css" rel="stylesheet" media="screen">
+  <link href="../public/color/default.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+  <!-- intro area -->
+  <div id="intro">
+    <div class="intro-text">
+      <div class="container">
+        <div class="col-md-12">
+          <div id="rotator">
+            <h1><span class="1strotate">Matheus Rios</span></h1>
+            <div class="line-spacer"></div>
+            <p><span class="2ndrotate">Web Developer, Front-End, Sistemas de Informação</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <section id="contact" class="home-section bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>Contato</h2>
+            <div class="heading-line"></div>
+            <p>
+              Se você tiver alguma dúvida, preencha o formulário abaixo e entraremos em contato com você dentro de 24 horas. </p>
+              {{msg}}
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">                 
+       
+          <form action="send" method="POST" class="form-horizontal contactForm" role="form">
+            <div class="col-md-offset-2 col-md-8">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+            </div>
+
+            <div class="col-md-offset-2 col-md-8">
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>                
+              </div>
+            </div>
+
+            <div class="col-md-offset-2 col-md-8">
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objetivo da mensagem" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+            </div>
+
+            <div class="col-md-offset-2 col-md-8">
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Escreva aqui sua mensagem"></textarea>
+                <div class="validation"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2 col-md-8">
+                <button type="submit" class="btn btn-theme btn-lg btn-block">Enviar Mensagem</button>                <span  onclick="confirmEnvioEMail();"></span>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- js -->
+  <script src="../public/js/jquery.js"></script>
+  <script src="../public/js/bootstrap.min.js"></script>
+  <script src="../public/js/wow.min.js"></script>
+  <script src="../public/js/mb.bgndGallery.js"></script>
+  <script src="../public/js/mb.bgndGallery.effects.js"></script>
+  <script src="../public/js/jquery.simple-text-rotator.min.js"></script>
+  <script src="../public/js/jquery.scrollTo.min.js"></script>
+  <script src="../public/js/jquery.nav.js"></script>
+  <script src="../public/js/modernizr.custom.js"></script>
+  <script src="../public/js/grid.js"></script>
+  <script src="../public/js/stellar.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="../public/contactform/contactform.js"></script>
+
+  <!-- Template Custom Javascript File -->
+  <script src="../public/js/custom.js"></script>
+
+</body>
+</html>
